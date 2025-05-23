@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de caixas</title>
+
+    <style>
+        section#container{
+            /* Importa a imagem e faz com que ela ocupe 100% do tamanho de largura e altura */
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+
+            /* Conteiner sempre relativo */
+            position: relative;
+            
+            height: 800px;
+            padding: 10px;
+            background-color:darkred;
+        }
+
+        article#conteudo{
+            /* Importa a imagem e faz com que ela ocupe 100% do tamanho de largura e altura */
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+
+            /* Conteúdo sempre absoluto */
+            position: absolute;
+
+            height: 200px;
+            width: 400px;
+            background-color:yellow;
+
+            /* Propriedades disponiveis para absolute */
+            top: 50%;
+            left: 50%;
+
+            /* Ajuste final para centralização */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        </article>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+/*Tudo que começa com @ é uma regra em CSS*/
+@charset 'UTF-8';
+
+#cssexterno {
+    font-size: 20px;
+    color: rgb(4, 0, 255);
+}

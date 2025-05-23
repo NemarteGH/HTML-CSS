@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            padding: 30px;
+            text-align: center;
+        }
+        
+        div {
+            display: inline-block;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            margin: 10px;
+        }
+        
+        /* Esconde os paragrafos dentro de div usando seletor do tipo filho */
+        div > p {
+            visibility: hidden;
+            position: absolute;
+            top: 90px;
+            left: 75px;
+        }
+
+        /* Caso mouse passe em cima da div o paragrafo aparece */
+        div:hover > p {
+            visibility: visible;
+            font-size: 1em;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        /* Quando mouse passar em cima da div, ela muda de cor */
+        div:hover {
+            background-color: rgb(51, 92, 139);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01 <p> TESTE</p> </div>
+    <div id="d2">02 <p> TESTE</p> </div>
+    <div id="d3">03 <p> TESTE</p> </div>
+
+    
+</body>
+</html>

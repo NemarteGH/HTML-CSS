@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+
+    <style>
+        body{
+            background-color: rgb(224, 224, 224);
+            text-align: justify;
+            font-family: sans-serif;
+            font-size: 1em;
+            }
+
+        h1 {
+            background-color: rgb(153, 153, 194);
+            border-radius: 10px;
+            padding-left: 10px;
+            }
+
+        p{
+            max-width: 500px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Adicionando vídeo ao site de forma local</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor, o problema disso é que  o consumo de banda pode ser alto dependendo da quantidade de acessos no site, o que pode elevar o preço absurdamente. Podemos comprimir o vídeo ou deixalo em um formato mais leve para reduzir esses custos.</p>
+
+    <!-- Vídeo local do gato -->
+    <video src="Videogatomp4720.mp4" controls width="500" poster="thumbgato.png" type="video/mp4"></video>
+
+    <h1>Adicionando vídeo local de forma alternativa</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor, o problema disso é que  o consumo de banda pode ser alto dependendo da quantidade de acessos no site, o que pode elevar o preço absurdamente. Podemos comprimir o vídeo ou deixalo em um formato mais leve para reduzir esses custos.</p>
+
+    <!-- Vídeo local do gato -->
+    <video controls width="500" poster="thumbgato.png">
+        <source src="videos/Videogatowebm720.webm" type="video/webm">
+        <source src="Videogatomp4720.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com a tag &lt;video&gt;</p>
+    </video>
+
+    <h1>Adicionando vídeo externo (YouTube)</h1>
+    <p>Consome dados do YouTube ao inves de consumir dados locais(recomendado).</p>
+
+    <!-- Vídeo do YouTube -->
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=__ipov5scM0QjrE3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Adicionando vídeo externo (Vimeo)</h1>
+    <p>Consome dados do Vimeo ao inves de consumir dados locais(recomendado).</p>
+
+    <!-- Vídeo do Vimeo -->
+    <iframe src="https://player.vimeo.com/video/1078045641?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Prelazak (Passage) 2025"></iframe>
+
+</body>
+</html>

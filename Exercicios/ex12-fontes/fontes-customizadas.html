@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+
+    <style>
+
+        /* Fonte importada do Google Fonts */
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Condensed&display=swap');
+
+        @font-face {
+            font-family:'Cherno';
+
+            src: 
+            url('Chernobyl.otf') format('opentype'), 
+            url('Chernobyl.ttf') format('truetype');
+
+            font-weight: normal;
+            font-style: normal;
+
+            /* opentype (otf) truetype (ttf) truetype-aat (Apple Advanced Typography) svg. otf e ttf geralmente serve pra todos os navegadores. */
+        }
+
+        body{
+            text-align: justify;
+            margin: auto;
+            padding: 10px;
+        }
+
+        h1, h2 {
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1em;
+        }
+
+        #texto1 {
+            /* Tenta arial, se não tiver, tenta Helvetica, e se não tiver, tenta sans-serif */
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* Medidas Absolutas: cm, mm, in, [px], pt, pc.
+            Medidas Relativas: [em], ex, rem, vw, vh, %
+            Recomendaçãoes W3C: px e em (em parece mais seguro para compatibilidade com dispositivos diversos) 
+            OBS: 16px geralmente = 1em */
+            font-size: 1.2em;
+        }
+
+        #titulo1 {
+            font-family: sans-serif;
+            font-size: 2.5em;
+            
+        }
+
+        #titulo2 {
+            /* Adicionando fonte do Google que foi importada */
+            font-family: "Ubuntu Condensed", sans-serif;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+
+        #titulo3 {
+            /* Adicionando fonte interna do arquivo otf*/
+            font-family: Cherno;
+            font-size: 2.5em;
+            text-decoration: underline;
+        }
+
+        #titulo4 {
+            /* lighter, normal, bold, bolder, 100-900*/
+            font-weight: bold; 
+            font-style: italic;
+            text-decoration:underline; 
+            font-size: 2em;
+            font-family: monospace;
+        }
+
+        #titulo5 {
+            /* Propriedade short hand: 
+            |font-style | font-weight | font-size | font-family | */
+            font: italic bold 2em sans-serif
+        }
+             
+    </style>
+
+</head>
+<body>
+    <h1 id="titulo1">Trabalhando com fontes</h1>
+    <p id="texto1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem illum obcaecati odio quibusdam quae et, nobis illo doloremque omnis dolorum libero earum quod est iste possimus, aspernatur non facere! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, dolore ex, reiciendis possimus maiores velit explicabo quo porro nulla alias dicta nihil in minus accusantium dignissimos similique aspernatur harum minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad nulla ducimus aperiam qui quasi nostrum quidem veniam et quia exercitationem excepturi rem, porro tempore vitae numquam animi a ratione!</p>
+
+    <h2 id="titulo2">Fonte Ubuntu</h2>
+    <p id="texto2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laudantium dignissimos deleniti veniam sint sunt facere reprehenderit perspiciatis fuga. Commodi, incidunt fuga amet necessitatibus distinctio esse vero nesciunt atque aspernatur!</p>
+
+    <h2 id="titulo3">Fonte Chernobyl</h2>
+    <p id="texto3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laudantium dignissimos deleniti veniam sint sunt facere reprehenderit perspiciatis fuga. Commodi, incidunt fuga amet necessitatibus distinctio esse vero nesciunt atque aspernatur!</p>
+
+    <h2 id="titulo4">Fonte monospace comum</h2>
+    <p id="texto4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laudantium dignissimos deleniti veniam sint sunt facere reprehenderit perspiciatis fuga. Commodi, incidunt fuga amet necessitatibus distinctio esse vero nesciunt atque aspernatur!</p>
+
+    <h2 id="titulo5">Fonte editada com short hand</h2>
+    <p id="texto5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laudantium dignissimos deleniti veniam sint sunt facere reprehenderit perspiciatis fuga. Commodi, incidunt fuga amet necessitatibus distinctio esse vero nesciunt atque aspernatur!</p>
+    
+</body>
+</html>

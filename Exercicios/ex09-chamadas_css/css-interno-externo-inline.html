@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS externo/pode ser local ou da internet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CCS internos -->
+    <style>
+
+        /*Referência a um ID especifico*/
+        #titulo {
+            color: rgb(13, 13, 194);
+        }
+
+        #cssint {
+            font-size: 20;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+        
+        /*Referência a uma classe especifica*/
+        .subtitulo {
+            color: darkred;
+        }
+
+        /*Referência a uma tag especifica*/
+       
+        body {
+            background-color:rgb(170, 222, 255);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1 id="titulo">CSS</h1>
+    <h2 class="subtitulo">CSS inline:</h2>
+
+    <!--CSS inline-->
+    <p style="font-size: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Esse texto demonstra como funcionam os estilos CSS inline. <br>Nesse caso adicionamos o parametro/atributo style dentro da própria tag.</p>
+
+    <hr>
+
+    <!--CSS interno/observe o <style> dentro do <head>-->
+    <h2 class="subtitulo">CSS interno:</h2>
+    <p id="cssint">Esse outro texto está sendo modificado por CSS interno dentro <br> do &lt;head&gt; do mesmo documento onde o HTLM esta escrito.</p>
+
+    <hr>
+    
+    <!-- CSS externo -->
+    <h2 class="subtitulo">CSS externo:</h2>
+    <p id="cssexterno">Esse texto e todos os seus estilos estão sendo modificados por um documento CSS externo. o que <br> é uma grande vantagem quando se trabalha com vários documentos HTML que devem possuir um mesmo estilo.</p>
+
+</body>
+</html>

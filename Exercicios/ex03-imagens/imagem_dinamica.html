@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+
+    <style>
+        body{
+            background-color: rgb(224, 224, 224);
+            text-align: justify;
+            font-family: sans-serif;
+            font-size: 1em;
+            }
+
+        h1 {
+            background-color: rgb(153, 153, 194);
+            border-radius: 10px;
+            padding-left: 10px;
+            }
+
+        p{
+            max-width: 500px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou
+    aumente e diminua a janela do seu navegador.</p>
+
+    <picture>
+        <!-- Carrega imagem pequena caso a tela do dispositivo seja menor que 750px de largura -->
+        <source media="(max-width:750px)" srcset="foto-p.png" type="image/png">
+
+        <!-- Carrega imagem média caso a tela do dispositivo seja menor que 1050px de largura-->
+        <source media="(max-width:1050px)" srcset="foto-m.png" type="image/png">
+
+        <!-- Carrega imagem grande caso a tela do dispositivo seja maior que 1050px de largura-->
+        <img src="foto-g.png" alt="Imagem grande">
+    </picture>
+</body>
+</html>

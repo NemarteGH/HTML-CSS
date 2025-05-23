@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+
+    <style>
+        body{
+            background-color: rgb(224, 224, 224);
+            text-align: justify;
+            font-family: sans-serif;
+            font-size: 1em;
+            }
+
+        h1 {
+            background-color: rgb(153, 153, 194);
+            border-radius: 10px;
+            padding-left: 10px;
+            }
+
+        p{
+            max-width: 500px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Inserindo áudio</h1>
+    <p>O áudio abaixo é livre de direitos autorais.</p>
+
+    <!-- Áudio -->
+    <audio src="beats.mp3" controls autoplay></audio>
+    <!-- Formatos suportados por muitos navegadores MP3, WAV e OGG -->
+
+    <h1>Forma alternativa para inserir áudio</h1>
+
+    <!-- Áudio -->
+    <audio preload="metadata" controls autoplay loop>
+        <!-- Tenta carregar os arquivos, se o navegador não suportar a tag <audio>, exibe a mensagem. -->
+        <source src="beats.ogg" type="audio/ogg">
+        <source src="beats.wav" type="audio/wav">
+        <source src="beats.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não é compatível com a tag &lt;audio&gt;.</p>
+    </audio>
+
+</body>
+</html>

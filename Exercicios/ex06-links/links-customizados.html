@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+       *{
+        text-decoration: none;
+       }
+
+       body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+        /* Usando pseudo-classes */
+       a:active {
+        color: rgb(145, 255, 0);
+       }
+
+       a:visited {
+        color: darkgreen;
+       }
+
+       a:hover {
+        text-decoration: solid;
+        color: brown;
+       }
+
+        /* Usando pseudo-elementos */
+       a::before {
+        content: '→ ';
+       }
+
+       a::after {
+        content: '[link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: dimgray;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://google.com">Repositório GitHub</a></li>
+        <li><a href="https://instagram.com">Instagram </a></li>
+        <li><a href="https://youtube.com">Linkedin</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <h2>Usando links externos:</h2>
+
+    <!-- tipos de target: _blank, _parent, _top, _self - É interessante tomar cuidado com _blank e usar o rel noopener e noreferrer quando necessário -->
+
+    <!-- tipos de rel: next, prev, external, nofollow, noopener, noreferrer -->
+    <p>Acesse o meu <a href="https://github.com/nemartegh" target="_blank" rel="external noopener noreferrer">repositório no github</a>.</p>
+
+    <h2>Usando links internos:</h2>
+    <p>Essa é a primeira página do site, acesse uma <a href="pagina-2.html" rel="next">segunda página</a>.</p>
+
+    <h2>Links para download:</h2>
+    
+    <ul>
+        <li><a href="logo-html.png" download="logo-html.png" type="image/png">Baixar imagem .png</a> </li>
+
+        <li><a href="logo-html.zip" download="logo-html.zip" type="application/zip">Baixar imagem compactada</a></li>
+    </ul>
+
+
+
+</body>
+</html>

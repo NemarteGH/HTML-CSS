@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Customizando body */
+        body{
+            font-size: large;
+        }
+        /* Customizando ol */
+        ol {
+            background-color: rgb(231, 231, 231);
+            margin: auto;
+            border: 1px solid black;
+            padding: 10px 10px 10px 40px;
+        }
+        /* Customizando ul */
+        ul{
+            background-color: rgb(219, 219, 219);
+            border: 1px dashed rgba(0, 0, 0, 0.411);
+        }
+        /* Customizando dl */
+        dl{
+            background-color: rgb(226, 226, 226);
+            padding: 10px;
+        }
+        /* Customizando dt */
+        dt{
+            width: 85px;
+            background-color: rgb(177, 177, 177);
+        }
+        /* Customizando dd */
+        dd{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px dashed black
+        }
+
+        /* Customizando li (elementos de cada lista) */
+        li{
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas:</h2>
+    <ol type="1"> <!-- A, a, i, I, 1 -->
+        <li>Acordar</li>
+        <li>Escovar dentes</li>
+        <li>Tomar cafe</li>
+        <li>Ligar par o João</li>
+    </ol>
+
+    <h2>Listas não ordenadas:</h2>
+
+    <ul type="circle"> <!-- circle, square, disc -->
+        <li>Comprar arroz</li>
+        <li>Postar uma foto</li>
+        <li>Comprar milho</li>
+    </ul>
+
+    <h2>Juntando listas:</h2>
+
+    <ol>
+        <li>Antigas</li>
+        <ul>
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Visual Basic</li>
+            <li>Delphi</li>
+        </ul>
+        <li>Novas</li>
+        <ul>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+        </ul>
+    </ol>
+
+    <h2>Listas aninhadas:</h2>
+
+    <ol>
+        <li>Jogos</li>
+        <ul>
+            <li>Crash</li>
+            <ul>
+                <li>I</li>
+                <li>II</li>
+                <li>III</li>
+            </ul>
+            <li>Castlevania</li>
+            <li>Mortal Kombat</li>
+            <ul>
+                <li>I</li>
+                <li>Shaolin Monks</li>
+                <li>MK12</li>
+            </ul>
+            <li>Máscara</li>
+            <li>Spiderman</li>
+            <li>Bomberman</li>
+        </ul>
+        <li>Consoles</li>
+        <ul>
+            <li>PlayStation</li>
+            <li>NES</li>
+            <li>XBox</li>
+            <li>Nintendo I</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições</h2>
+
+    <dl>
+        <dt>HTML:</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS:</dt>
+        <dd>Linguagem de marcação para criação de design de um site.</dd>
+        <dt>JavaScript:</dt>
+        <dd>Linguagem de programação que adiciona interatividade ao site.</dd>
+    </dl>
+
+</body>
+</html>

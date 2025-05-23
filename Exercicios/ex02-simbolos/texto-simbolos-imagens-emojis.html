@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Colocando favicon na página-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        p{
+            max-width: 500px;
+        }
+
+        mark{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Parágrafos, quebras de linha e símbolos.</h1><hr>
+
+    <!-- Quebra de linha -->
+    <p>
+        Textos com a tag "<mark>&lt;p&gt;</mark>" geralmente não quebram de linha, nem apertando enter. Caso queira fazer uma quebra de linha em algum texto html, use a tag "<mark>&lt;br&gt;</mark>". <br>
+    </p>
+    
+    <!-- Símbolos especiais -->
+    <p>
+        Vamos colocar alguns símbolos especiais na página. Todos os símbolos que são com "<mark>&palavra;</mark>"são simbolos de entidades HTML nomeadas. 
+
+        <mark>&trade; &reg; &euro; &delta; &acd; &real; &zeta;</mark><br>
+    </p>
+
+    <!-- Emojis -->
+    <p>
+        Agora vamos adicionar alguns emojis. Aqui temos dois novos tipos de códigos Unicode decimal (<mark>&#decimal;</mark>)e unicode hexadecimal (<mark>&#xhexadecimal;</mark>):
+        &phone;    <!-- Entidade HTML nomeada -->
+        &#129392;  <!-- Unicode decimal -->
+        &#x1F604;  <!-- Unicode hexadecimal -->
+        <hr>
+    </p>
+
+</body>
+</html>

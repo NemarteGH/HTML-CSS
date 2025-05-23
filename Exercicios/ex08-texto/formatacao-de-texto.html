@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        p{
+            max-width: 800px;
+        }
+
+        body h2{
+            background-color: rgb(168, 186, 235);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Principais formatações</h1>
+
+    <!-- Negrito e destaque -->
+    <h2>Negrito e destaque</h2>
+    <p>
+        1 - Nessa frase usamos &lt;b&gt; para fazer a palavra ficar em <b>bold.</b> (Apenas muda a forma)
+    </p>
+    <p>
+        2 - Nessa outra usamos &lt;stong&gt; para deixar a palavra em <strong>destaque.</strong> (Tem significado semântico)
+    </p>
+    
+    <!-- Itálico e ênfase -->
+    <h2>Itálico e Ênfase</h2>
+    <p>
+        1 - Nessa frase usamos &lt;i&gt; para deixar um texto em <i>itálico.</i> (Apenas muda a forma)
+    </p> 
+    <p>
+        2 - Nessa frase usamos &lt;em&gt; para deixar um texto em <em>ênfase.</em> (Tem significado semântico
+    </p>
+   
+    <!-- Recomendação -->
+    <p style="color: blue; background-color: rgb(218, 218, 218); padding: 10px;">
+        Recomenda-se usar sempre &lt;strong&gt; para bold e destaque, e sempre &lt;em&gt; para ênfase e itálico. &lt;i&gt; e &lt;b&gt; vem do HTML4 e não seguem o padrão semântico do HTML5, apesar de funcionarem perfeitamente.
+    </p>
+
+    <!-- Marcação de texto -->
+    <h2>Marcaçao de texto</h2>
+    <p>
+        Podemos marcar um texto usando a tag &lt;mark&gt;, <mark style="background-color: lime;">isso deixa o texto grifado</mark> como se tivesse passado um marcador por cima.
+    </p>
+
+    <!-- Texto grande e pequeno -->
+    <h2>Texto grande e pequeno</h2>
+    <p>
+        Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> com as tags &lt;big&gt; e &lt;small&gt;. 
+    </p>
+        
+    <!-- Recomendação -->
+    <p style="color: blue; background-color: rgb(221, 221, 221); padding: 10px;">
+        Recomenda-se usar CSS para aumentar o tamanho,até porque a tag &lt;big&gt; é considerada ultrapassada. Porem o small ainda possui semântica (significado) e pode ser usado em rodapes ou em letras miúdas de um documento.
+    </p>
+    
+
+    <!-- Texto deletado -->
+    <h2>Texto deletado</h2>
+    <p>
+        Podemos criar um <del>texto deletado ou riscado</del> que pode ser lido porem não considerado, para isso usamos &lt;del&gt;.
+    </p>
+
+    <!-- Texto sublinhado -->
+    <h2>Texto inserido</h2>
+    <p>
+        Podemos <ins>sublinhar</ins> um texto com &lt;ins&gt;, ou com &lt;u&gt;. A primeira sendo <u>semântica</u> e a segunda não. Por isso recomenda-se usar sempre &lt;ins&gt;.
+    </p>
+
+    <!-- Texto subscrito -->
+    <h2>Texto subscrito</h2>
+    <p>Para escrever coisas como H<sub>2</sub>0</p>
+
+    <!-- Texto obrescrito -->
+    <h2>Texto sobrescrito</h2>
+    <p>Útil para escrever 5<sup>3</sup>+8</p>
+
+    <!-- Código fonte -->
+    <h2>Código-fonte</h2>
+    <p>
+        O comando <code>document.getElementById('teste')</code>. que a fonte do código esta mono espaçada, isso facilita a leitura. Usamos a tag &lt;code&gt;. O problema de usar essa tag, é que ela só serve para códigos curtos de uma linha, porque ela não indenta códigos grandes.
+    </p>
+
+    <!-- Código fonte indentado -->
+    <h2>Código-fonte indentado</h2>
+    <pre>
+        <code>
+    var = 5
+    if var % 2 == 0:
+        print("O número é par!")
+    else:
+        print("O número é impar!")
+        </code>
+    </pre>
+
+    <!-- Citação simples -->
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+
+    <!-- Citação em bloco -->
+    <h2>Citações de bloco</h2>
+    <p>Conforme diz o livro de HTML:</p>
+        <blockquote cite="http://example.com/textodeondeacitaçãofoitirada">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore dicta repellendus, quis repudiandae ipsam? Eos blanditiis amet ea rerum non reprehenderit officia quidem a rem! Ipsam, provident laudantium. Nihil.</blockquote>
+
+    <!-- Abreviações -->        
+    <h2>Abreviações</h2>
+    <p>Eu gosto de estudar <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Mas pra quem não sabe o que é isso, é importante ter uma explicação nas abreviações!</p>
+        
+    <!-- Texto invertido -->
+    <h2>Texto invertido</h2>
+    <p>
+        <bdo dir="rtl">
+            Estou aprendendo a fazer coisas interessantes com HTML, um texto como esse por exemplo, pode ser usado para embaralhar algo. Interessante do ponto de vista hacker!
+        </bdo>
+    </p>
+
+</body>
+</html>
