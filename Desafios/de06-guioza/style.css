@@ -1,0 +1,203 @@
+@charset 'UTF-8';
+
+/* Importando Passion One */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/* Importando Lubrifont */
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+
+/* Importando Katana */
+@font-face {
+    font-family: 'Katana';
+    src: url('katana_2/KATANA.ttf') format('truetype');
+}
+
+/* Configurações de variáveis */
+:root{
+    --fonte1: 'WDXL Lubrifont TC';
+    --fonte2: 'Katana';
+}
+
+/* Configurações globais*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Configurações do header */
+header {
+    text-align: center;
+    background-color: #f5e501;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header h1{
+    font-family:var(--fonte2);
+    font-size: 3em;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.295);
+}
+
+header p{
+    font-family: var(--fonte2);
+    font-size: 1.2em;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.233);
+    
+}
+
+/* Configurações do body */
+body {
+    background-color:#ffffff;
+}
+
+/* Configurações do main */
+
+main{
+    width: 700px;
+    margin: auto;
+    box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.062);
+}
+
+/* Configurações de sessão geral */
+section h2{
+    font-family: var(--fonte2);
+    font-size: 1.5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+}
+
+section{
+    background-color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
+section p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+section ul{
+    padding: 10px 10px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #9d9a68a2 ;
+    border-radius: 5px 0px;
+    padding: 5px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.212);
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.137);
+}
+
+/* Configurações da sessão historia */
+section#historia{
+    background-image: url('imagens/guioza01.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left center;
+}
+
+section#historia h2{
+    color: white;
+}
+
+section#historia p{
+    padding: 10px 10px 10px 10px;
+    text-indent: 10px;
+    line-height: 1.5em;
+}
+
+section#historia div{
+    background-color: rgba(226, 226, 226, 0.877);
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* Configurações da sessão ingredientes */
+section#ingredientes time{
+    color: #8250F2;
+    text-decoration: underline;
+    
+}
+
+section#ingredientes img{
+    width: 40px;
+    vertical-align: middle;
+    display: inline;
+    margin-right: 8px;
+    
+}
+
+section#ingredientes #linformacoes{
+    padding-left: 10px;
+    background-color: #655f7321;
+    border-radius: 15px;
+    margin-bottom:20px ;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.24);
+
+}
+
+section#ingredientes #lrecheio, #lmolhos, #lingredientes{
+    line-height: 1.5em;
+}
+
+/* Configurações da sessão preparo */
+section#preparo div{
+    background-color:#9d9a6886;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+section#preparo{
+    text-align: center;
+}
+
+section#preparo img{
+    width: 650px;
+    margin-top: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+section#preparo p{
+    padding: 1em;
+    text-indent: 15px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+section#preparo h2{
+    text-align: left;
+}
+
+/* Configurações do aside */
+
+aside div{
+    text-align: center;
+}
+
+aside h2{
+    padding: 15px;
+    font-family: var(--fonte2);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.212);
+}
+
+aside iframe{
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+    margin-bottom: 50px;
+}
+
+/* Configurações do footer */
+footer{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    
+    font-family: var(--fonte1);
+    background-color: #F5E601;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.363);
+}
