@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 001</title>
+
+    <style>
+
+        /* Configurando estilo da tabela */
+        /* Collapse junta as bordas */
+        table{
+            width: 400px;
+            height: 200px;
+            border-collapse: collapse;
+            background-color: rgba(127, 255, 212, 0.555);
+        }
+
+        /* Configurando estilo do dado */
+        td{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            padding: 5px;
+            font-weight: normal;
+
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas em HTML</h1>
+    <!--
+        Hierarquia de tabelas (simples):
+        table = Tabela
+            tr = Table Row
+                th = Table Header
+                td = Table Data
+    -->
+
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>dado1</td>
+            <td>dado2</td>
+            <td>dado3</td>
+            <td>dado4</td>
+        </tr>
+
+        <tr> <!-- Segunda linha -->
+            <td>dado5</td>
+            <td>dado6</td>
+            <td>dado7</td>
+            <td>dado8</td>
+        </tr>
+
+        <tr> <!-- Terceira linha -->
+            <td>dado9</td>
+            <td>dado10</td>
+            <td>dado11</td>
+            <td>dado12</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
