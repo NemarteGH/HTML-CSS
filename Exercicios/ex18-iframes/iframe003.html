@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe 003</title>
+
+    <style>
+        iframe{
+            width: 95vw;
+            height: 300px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Escolha a página a ser apresentada no frame</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nam magni quod eveniet qui beatae maiores. Odio sunt error perferendis. Molestiae asperiores ipsam quidem dolorem iste dignissimos distinctio reiciendis illum.</p>
+
+    <!-- Referenciando o frame "meuframe" -->
+    <ul>
+        <li><a href="pag001.html" target="meuframe">Primeira página</a></li>
+        <li><a href="../ex04-audios/audios001.html" target="meuframe">Segunda página</a></li>
+        <li><a href="../ex17-tabelas/tabelas004.html" target="meuframe">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia asperiores enim architecto neque voluptate. Nulla accusamus, cupiditate dolore suscipit ab, nisi expedita facere sit veniam deserunt nihil, animi molestias.</p>
+
+    <!-- Usando o atributo name para identificar o frame e referencia-lo posteriormente -->
+
+    <!-- Para deixar deixar um conteúdo padrão use srcdoc ou src para colocar um arquivo ou codígo padrão a ser mostrado quando carregar a página -->
+    <iframe name="meuframe" srcdoc="<h1>Conteúdo padrão</h1>" frameborder="1"></iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi optio, veritatis molestiae esse debitis soluta dignissimos voluptates deserunt, nesciunt voluptatum! Sint molestiae ullam provident mollitia obcaecati magni reiciendis? Illum?</p>
+</body>
+</html>
